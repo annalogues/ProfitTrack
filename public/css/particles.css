@@ -1,0 +1,39 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+   body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Placer derrière tout */
+  }
+  
+  .container {
+    position: relative; /* Permet de superposer correctement */
+    z-index: 1; /* Placer le container au-dessus */
+  }
+  
+   
+   
+
+   
+   /* ---- particles.js container ---- */
+   
+   #particles-js{
+     width: 100%;
+     height: 100%;
+     background-color: #4A919E;
+     background-image: url('');
+     background-size: cover;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+   }
+   
