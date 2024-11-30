@@ -37,3 +37,23 @@
      background-repeat: no-repeat;
    }
    
+
+
+   .code-line {
+    font-family: 'Courier New', Courier, monospace; /* Police de caractère monospace pour simuler du code */
+    font-size: 18px; /* Taille de police idéale pour un code */
+    background: linear-gradient(145deg, #333333, #444444); /* Dégradé de fond pour simuler un éditeur */
+    border-radius: 8px; /* Bords arrondis pour donner un effet moderne */
+    padding: 15px; /* Espace autour du texte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de relief */
+  }
+  
+  code {
+    background: #2e2e2e; /* Fond plus sombre pour le code */
+    padding: 5px 10px; /* Espace autour du code */
+    border-radius: 5px; /* Coins arrondis pour le code */
+    font-size: 1.2em; /* Agrandir légèrement le texte du code */
+    color: #f5f5f5; /* Couleur claire pour le texte du code */
+    display: inline-block; /* Assurer que le texte code soit sur une ligne */
+  }
+  
