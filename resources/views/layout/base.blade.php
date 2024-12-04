@@ -27,10 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white  {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="/">Accueil</a>
+              <a class="nav-link text-white  {{ Request::is('/') ? 'active text-primary' : 'text-white' }}" aria-current="page" href="/">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#">Source de revenu</a>
+                <a class="nav-link {{ Request::is('source-revenu') ? 'active text-primary' : 'text-white' }}" href="/source-revenu">Source de revenu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Nouveau bénéfice</a>
@@ -49,6 +49,8 @@
 
 
     @include('layout.footer')
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
