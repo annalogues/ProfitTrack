@@ -1,3 +1,7 @@
+@php
+    $current = Route::current()
+@endphp
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,16 +18,19 @@
     <div id="particles-js"></div>
 
     {{-- Navigation BARRE --}}
-    <nav class="navbar navbar-expand-md navbar-light " style="background-color: #003C57;">
+    <nav class="navbar navbar-expand-md navbar-light my-3"  style="background: linear-gradient(145deg, #333333, #444444); border-radius: 5px;">
       <div class="container-fluid ">
-        <a class="navbar-brand text-white" href="#">ProfitTrack</a>
+        <a class="navbar-brand fs-4 fw-bold" href="#" style="color: #5784BA;">ProfitTrack</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Source de revenu</a>
+              <a class="nav-link text-white  {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">Source de revenu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Nouveau bénéfice</a>

@@ -57,3 +57,8 @@
     display: inline-block; /* Assurer que le texte code soit sur une ligne */
   }
   
+
+  .nav-link.active {
+    color: #5784BA !important; 
+  }
+  
